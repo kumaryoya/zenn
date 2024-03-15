@@ -16,6 +16,8 @@ publication_name: "linkedge"
 
 少しでも皆様の参考になりますと幸いです！
 
+![](https://storage.googleapis.com/zenn-user-upload/5a3b245e76fb-20240316.png =400x)
+
 ## 対象読者
 
 :::message
@@ -41,12 +43,12 @@ publication_name: "linkedge"
 
 ## Brakeman とは？
 
-[Brakeman](https://brakemanscanner.org/)は**Ruby on Rails**で書かれているアプリケーションの**セキュリティ脆弱性**を静的解析するための**gem**です！
+[Brakeman](https://brakemanscanner.org/)は**Ruby on Rails**で書かれているアプリケーションの**セキュリティ脆弱性**を**静的解析**するための**gem**です！
 **Brakeman**を実行することで、アプリケーションのコードをスキャンし、セキュリティ上の問題がある可能性のある箇所を特定し、警告してくれる、とても便利なツールです！
-ターミナルで実行し、都度確認することも出来ますが、**CircleCI**に組み込むことで、確認し忘れることがなくなります！
+ターミナルで実行し、都度チェックすることも出来ますが、**CircleCI**に組み込むことで、チェックし忘れることがなくなるので、非常に便利です！
 
 **Brakeman**は、様々な観点から**セキュリティ脆弱性**を解析してくれます！
-**Brakeman**がどんな種類の警告をしてくれるかは以下のサイトをご確認ください。
+**Brakeman**がどんな種類の警告をしてくれるかは以下のサイトをご確認ください！
 https://brakemanscanner.org/docs/warning_types/
 
 ## Unscoped Find
