@@ -10,7 +10,7 @@ publication_name: "linkedge"
 お疲れ様です！
 おおくまです！
 
-今回は、「【Rails】CircleCIにBrakemanを組み込み、セキュリティチェックをする」ということで、**gem**の**Brakeman**についてまとめてみました！
+今回は、「【Rails】CircleCIでBrakemanを実行し、セキュリティチェックをする」ということで、**gem**の**Brakeman**についてまとめてみました！
 
 少しでも皆様の参考になりますと幸いです！
 
