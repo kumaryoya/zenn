@@ -54,29 +54,33 @@ https://brakemanscanner.org/docs/warning_types/
 ## Unscoped Find
 
 **Brakeman**が警告してくれるものの１つに[Unscoped Find](https://brakemanscanner.org/docs/warning_types/unscoped_find/)というものがあります！
-別のモデルに属するモデルには、通常、スコープ指定されたクエリを介してアクセスする必要があります。
-例えば、`User`モデルと`Post`モデルで次のような関係があるとします。
+別のモデルに属するモデルには、通常、スコープ指定されたクエリを介してアクセスする必要があります！
+例えば、`User`モデルと`Post`モデルで次のような関係があるとします！
 
-```ruby
+```ruby:app/models/user.rb
 has_many :posts, dependent: :destroy
+```
 
+```ruby:app/models/post.rb
 belongs_to :user
 ```
 
 次のように`Post`モデルにアクセスしている場合、安全ではない検索方法の可能性があります。
 
-```ruby
+```ruby:app/controllers/posts_controller.rb
 Post.find(params[:id])
 ```
 
-`show`アクションなら大丈夫ですが、`edit`アクションや、`update`アクションでは、他人の`Post`レコードにアクセスできてしまいます。
+`show`アクションなら大丈夫な場合もあるかもしれませんが、`edit`アクションや、`update`アクションでは、他人の`Post`レコードにアクセスできてしまいます。
 それを防ぐために、現在ログインしているユーザーというスコープを設定する必要があります。
 
-```ruby
+```ruby:app/controllers/posts_controller.rb
 current_user.posts.find(params[:id])
 ```
 
 このようなスコープの設定し忘れをチェックしてくれるのが、**Brakeman**の**Unscoped Find**という項目です！
+
+https://brakemanscanner.org/docs/warning_types/unscoped_find/
 
 ## CircleCI で Unscoped Find を検出する
 
