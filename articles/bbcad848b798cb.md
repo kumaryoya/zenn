@@ -53,7 +53,7 @@ https://brakemanscanner.org/docs/warning_types/
 
 ## Unscoped Find
 
-**Brakeman**が警告してくれるものの１つに[Unscoped Find](https://brakemanscanner.org/docs/warning_types/unscoped_find/)というものがあります！
+**Brakeman**が警告してくれるものの1つに[Unscoped Find](https://brakemanscanner.org/docs/warning_types/unscoped_find/)というものがあります！
 別のモデルに属するモデルには、通常、スコープ指定されたクエリを介してアクセスする必要があります！
 例えば、`User`モデルと`Post`モデルで次のような関係があるとします！
 
@@ -146,7 +146,7 @@ https://qiita.com/piggydev/items/8addbc04982dcd40c076
 ## さいごに
 
 今回は、**Brakeman**の**UnscopedFind**にのみスポットを当てましたが、本来は全てのチェック項目でアプリケーションを解析してもらい、セキュリティがしっかりとしたアプリケーションに修正することが大切です！
-一つ一つチェック項目を理解し、意識して今後コードを書いていきたいと思います！
+1つ1つチェック項目を理解し、意識して今後コードを書いていきたいと思います！
 最後まで読んでいただき、ありがとうございました！
 
 ## 参考文献
