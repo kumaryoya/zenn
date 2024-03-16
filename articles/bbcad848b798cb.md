@@ -3,7 +3,7 @@ title: "【Rails】Brakemanでセキュリティチェックをする"
 emoji: "🔒"
 type: "tech"
 topics: [Rails, Ruby, gem, githubactions, circleci]
-published: false
+published: true
 publication_name: "linkedge"
 ---
 
