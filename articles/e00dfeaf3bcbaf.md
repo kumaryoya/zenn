@@ -42,7 +42,7 @@ publication_name: "linkedge"
 ## precisionとは
 **precision**とは、カラム修飾子の1つで、``decimal/numeric/datetime/time``フィールドの精度（precision）を定義するものです！
 具体的には、小数点以下の桁数を指定するもので、最大6桁まで指定することができます！
-これをマイグレーションファイルにどのように書くか、または書かないのかによって、レコードに保存される値が変わってきます！
+この**precision**をどのように定義するのかによって、レコードに保存される値が変わってきます！
 
 https://railsguides.jp/active_record_migrations.html#%E3%82%AB%E3%83%A9%E3%83%A0%E4%BF%AE%E9%A3%BE%E5%AD%90
 
