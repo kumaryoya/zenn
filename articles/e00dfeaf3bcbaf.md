@@ -170,5 +170,3 @@ Loading development environment (Rails 7.0.8)
 ## 参考文献
 
 https://kossy-web-engineer.hatenablog.com/entry/2020/12/13/111823
-
-https://zenn.dev/bisque/scraps/6ff905748302e4
