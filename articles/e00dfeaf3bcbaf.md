@@ -12,7 +12,7 @@ publication_name: "linkedge"
 お疲れ様です！
 おおくまです！
 
-今回は、「【Rails】precisionについて」ということで、**Ruby on Rails**のカラム修飾子である**precision**についてまとめてみました！
+今回は、「【Rails】カラム修飾子 precision について」ということで、**Ruby on Rails**のカラム修飾子である**precision**についてまとめてみました！
 
 少しでも皆様の参考になりますと幸いです！
 
