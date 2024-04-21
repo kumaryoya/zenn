@@ -22,7 +22,7 @@ publication_name: "linkedge"
 
 - **Ruby on Rails**を学習中の方
 - **precision**について学びたい方
-  :::
+:::
 
 ## 注意点
 
@@ -37,7 +37,7 @@ publication_name: "linkedge"
 
 - Ruby：3.2.2
 - Rails：7.0.8
-  :::
+:::
 
 ## precisionとは
 **precision**とは、カラム修飾子の1つで、``decimal/numeric/datetime/time``フィールドの精度（precision）を定義するものです！
@@ -46,7 +46,7 @@ publication_name: "linkedge"
 
 https://railsguides.jp/active_record_migrations.html#%E3%82%AB%E3%83%A9%E3%83%A0%E4%BF%AE%E9%A3%BE%E5%AD%90
 
-細かく言うとバージョンによって挙動が変わってくるので、下記の記事を参考にしてみてください！
+**precision**は、**Rails**のバージョンによって挙動が変わってくるので、下記の記事を参考にしてみてください！
 
 https://zenn.dev/bisque/scraps/6ff905748302e4
 
