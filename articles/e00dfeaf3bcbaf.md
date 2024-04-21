@@ -2,7 +2,7 @@
 title: "【Rails】カラム修飾子 precision について"
 emoji: "💡"
 type: "tech"
-topics: [Rails, Ruby, db, precision, ]
+topics: [Rails, Ruby, db, precision, 初学者]
 published: false
 publication_name: "linkedge"
 ---
@@ -19,7 +19,6 @@ publication_name: "linkedge"
 ## 対象読者
 
 :::message
-
 - **Ruby on Rails**を学習中の方
 - **precision**について学びたい方
 :::
@@ -34,7 +33,6 @@ publication_name: "linkedge"
 ## 環境
 
 :::message
-
 - Ruby：3.2.2
 - Rails：7.0.8
 :::
@@ -51,7 +49,7 @@ https://railsguides.jp/active_record_migrations.html#%E3%82%AB%E3%83%A9%E3%83%A0
 https://zenn.dev/bisque/scraps/6ff905748302e4
 
 ## 具体例
-今回は以下の3つのテーブルを作成し、それぞれ異なるパターンで**precision**を適用し、どのような値が保存されるかを比較してみました！
+今回は以下の3つのテーブルを作成し、それぞれ異なるパターンで**precision**を適用し、どのように値が保存されるのか比較してみました！
 
 ```ruby:db/migrate/20240421005254_create_posts.rb
 class CreatePosts < ActiveRecord::Migration[7.0]
@@ -108,7 +106,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_21_014622) do
 end
 ```
 
-コンソールでそれぞれの``published_at``にどのような値が入るか確認してみます！
+コンソールでそれぞれの``published_at``にどのように値が保存されるか確認してみます！
 
 ```ruby:
 docker-compose exec app rails c
@@ -159,7 +157,7 @@ Loading development environment (Rails 7.0.8)
 - ``Comment``
   - ``Sun, 21 Apr 2024 11:21:47.147958377 JST +09:00``
 
-このように**precision**をどのように適用するのかによって保存される値が変わってきますので注意が必要です！
+このように**precision**をどのように適用するのかによって保存される値が変わってきますので、テーブル作成やカラム追加の際には注意が必要です！
 
 ## さいごに
 
