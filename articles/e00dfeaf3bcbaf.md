@@ -44,10 +44,6 @@ publication_name: "linkedge"
 
 https://railsguides.jp/active_record_migrations.html#%E3%82%AB%E3%83%A9%E3%83%A0%E4%BF%AE%E9%A3%BE%E5%AD%90
 
-**precision**は、**Rails**のバージョンによって挙動が変わってくるので、下記の記事を参考にしてみてください！
-
-https://zenn.dev/bisque/scraps/6ff905748302e4
-
 ## 具体例
 今回は以下の3つのテーブルを作成し、それぞれ異なるパターンで**precision**を適用し、どのように値が保存されるのか比較してみました！
 
@@ -150,14 +146,32 @@ Loading development environment (Rails 7.0.8)
 
 - ``now``
   - ``Sun, 21 Apr 2024 11:21:47.147958377 JST +09:00``
+
 - ``Post``
   - ``Sun, 21 Apr 2024 11:21:47.147958000 JST +09:00``
+  - **precision**を特に指定しなかった場合は、小数点以下6桁まで値が保存されています！
+  - 私の環境では、**precision**を指定していない場合は、内部的に、``precision: 6``と設定されるようです！
+
 - ``Article``
   - ``Sun, 21 Apr 2024 11:21:47.000000000 JST +09:00``
+  - こちらは、``precision: 0``と指定しているので、小数点以下は値が保存されていません！
+
 - ``Comment``
   - ``Sun, 21 Apr 2024 11:21:47.147958377 JST +09:00``
+  - こちらは、``precision: nil``と指定した結果、このようになりました！
+  - 調べたところ、``precision: nil``と指定した場合は、各環境のデータベースのデフォルトに設定されるようです！
+  - 見かけ上は、``now``と保存されている値が同じに見えますが、比較してみると値は違うみたいです！
+  ```
+  [5] pry(main)> now == Comment.first.published_at
+    Comment Load (0.2ms)  SELECT "comments".* FROM "comments" ORDER BY "comments"."id" ASC LIMIT $1  [["LIMIT", 1]]
+  => false
+  ```
 
 このように**precision**をどのように適用するのかによって保存される値が変わってきますので、テーブル作成やカラム追加の際には注意が必要です！
+
+また、**precision**は、**Rails**のバージョンによっても、挙動が変わってくるので、下記の記事を参考にしてみてください！
+
+https://zenn.dev/bisque/scraps/6ff905748302e4
 
 ## さいごに
 
