@@ -162,7 +162,7 @@ Loading development environment (Rails 7.0.8)
   - こちらは、``precision: nil``と指定した結果、このようになりました！
   - 調べたところ、``precision: nil``と指定した場合は、各環境のデータベースのデフォルトに設定されるようです！
   - コンソール上では、小数点以下9桁までしか表示されていないので、``now``と保存されている値が同じに見えますが、比較してみると値は違うみたいです！
-  ```
+  ```ruby:
   [5] pry(main)> now == Comment.first.published_at
     Comment Load (0.2ms)  SELECT "comments".* FROM "comments" ORDER BY "comments"."id" ASC LIMIT $1  [["LIMIT", 1]]
   => false
