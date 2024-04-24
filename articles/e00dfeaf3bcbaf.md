@@ -150,7 +150,7 @@ Loading development environment (Rails 7.0.8)
 - ``Post``
   - ``Sun, 21 Apr 2024 11:21:47.147958000 JST +09:00``
   - **precision**を特に指定しなかった場合は、小数点以下6桁まで値が保存されています！
-  - 私の環境では、**precision**を指定していない場合は、内部的に、``precision: 6``と設定されるようです！
+  - 私の環境では、**precision**を指定していない場合は、デフォルトで``precision: 6``と設定されるようです！
 
 - ``Article``
   - ``Sun, 21 Apr 2024 11:21:47.000000000 JST +09:00``
@@ -160,7 +160,7 @@ Loading development environment (Rails 7.0.8)
   - ``Sun, 21 Apr 2024 11:21:47.147958377 JST +09:00``
   - こちらは、``precision: nil``と指定した結果、このようになりました！
   - 調べたところ、``precision: nil``と指定した場合は、各環境のデータベースのデフォルトに設定されるようです！
-  - 見かけ上は、``now``と保存されている値が同じに見えますが、比較してみると値は違うみたいです！
+  - コンソール上では、小数点以下9桁までしか表示されていないので、``now``と保存されている値が同じに見えますが、比較してみると値は違うみたいです！
   ```
   [5] pry(main)> now == Comment.first.published_at
     Comment Load (0.2ms)  SELECT "comments".* FROM "comments" ORDER BY "comments"."id" ASC LIMIT $1  [["LIMIT", 1]]
