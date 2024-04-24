@@ -150,7 +150,8 @@ Loading development environment (Rails 7.0.8)
 - ``Post``
   - ``Sun, 21 Apr 2024 11:21:47.147958000 JST +09:00``
   - **precision**を特に指定しなかった場合は、小数点以下6桁まで値が保存されています！
-  - 私の環境では、**precision**を指定していない場合は、デフォルトで``precision: 6``と設定されたみたいです！
+  - 私の環境では、**precision**を指定していない場合は``precision: 6``と設定されました！
+  - 調べたところ、**Rails 7.0.2**以降では、**precision**を指定していない場合、**precision: 6**と読み替えるようです！
 
 - ``Article``
   - ``Sun, 21 Apr 2024 11:21:47.000000000 JST +09:00``
