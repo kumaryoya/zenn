@@ -3,7 +3,7 @@ title: "【Rails】カラム修飾子 precision について"
 emoji: "💡"
 type: "tech"
 topics: [Rails, Ruby, db, precision, 初学者]
-published: false
+published: true
 publication_name: "linkedge"
 ---
 
