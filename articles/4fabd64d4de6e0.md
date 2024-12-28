@@ -2,7 +2,7 @@
 title: "【小さなチーム、大きな仕事】要点整理＆自らの働き方を再考"
 emoji: "🚀"
 type: "idea"
-topics: [小さなチーム、大きな仕事, キャリア, 働き方, 未経験]
+topics: [小さなチーム、大きな仕事, キャリア, 働き方, 未経験, エンジニア]
 published: false
 publication_name: "linkedge"
 ---
