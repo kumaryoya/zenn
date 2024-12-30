@@ -66,8 +66,6 @@ https://amzn.asia/d/3m1r1jE
 
 ![](https://storage.googleapis.com/zenn-user-upload/94da3ed40622-20241230.webp =200x)
 
-![](https://storage.googleapis.com/zenn-user-upload/94da3ed40622-20241230.webp =100x)
-
 ### あなたに必要なものを作る
 
 ### 「時間がない」は言い訳にならない
