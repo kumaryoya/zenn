@@ -134,7 +134,7 @@ https://amzn.asia/d/3m1r1jE
 普段の業務の中で、ミーティングをする際に、ミーティングの着地点を意識したことは、これまであまりなかったかもしれません。
 そのせいで苦労したことや仕事が溜まってしまったことは今のところないですが、今後は、「決断を下す」「結論を出す」といったことを着地点にミーティングを進めていきたいと思います。
 
-![](https://storage.googleapis.com/zenn-user-upload/4a520903ba21-20241230.webp =150x)
+![](https://storage.googleapis.com/zenn-user-upload/4a520903ba21-20241230.webp =200x)
 
 ### いま、始める
 
