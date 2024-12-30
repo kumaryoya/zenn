@@ -64,7 +64,9 @@ https://amzn.asia/d/3m1r1jE
 自分が普段開発しているサービスの機能の追加や改善に対して、ただもくもくとコードを書くのではなく、その機能がユーザーにとってどのような価値があるのか、どのように役に立つのかを考えながら開発をし、その経験が積み重なることで、ゆくゆくは大きな仕事に繋がると考えました。
 「世界にささやかに貢献している」という感覚を得るために、自分の開発するサービスに対して、ユーザー目線で考えることを意識していきたいと思います。
 
-![](https://storage.googleapis.com/zenn-user-upload/94da3ed40622-20241230.webp =300x)
+![](https://storage.googleapis.com/zenn-user-upload/94da3ed40622-20241230.webp =200x)
+
+![](https://storage.googleapis.com/zenn-user-upload/94da3ed40622-20241230.webp =100x)
 
 ### あなたに必要なものを作る
 
