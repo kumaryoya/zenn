@@ -9,7 +9,7 @@ publication_name: "linkedge"
 
 ## はじめに
 
-2年ほど前ですが、プログラミングスクールでプログラミングを学んでいる間に、自作の Gem を作成し、公開したことがあります。
+2年ほど前ですが、プログラミングスクールでプログラミングを学んでいると際に、自作の Gem を作成し、公開したことがあります。
 
 内容としては非常にシンプルなもので、メソッドを呼び出すと、某漫画に出てくる悪魔の実の名前をランダムに返すというものです。
 
@@ -26,26 +26,12 @@ publication_name: "linkedge"
 - コメントなどでご指摘いただけると幸いです
 :::
 
-## 環境
-
-本記事で使用する環境は以下のとおりです。
-
-:::message
-- Visual Studio Code Insiders
-- GitHub Copilot
-- Devin
-- GitHub MCP Server
-- Slack MCP Server
-:::
-
-![](https://storage.googleapis.com/zenn-user-upload/99c677aa62a1-20250428.png =600x)
-
 ## 前提
 
-本記事では、以下を前提とします。
+本記事では、以下の Gem の最新バージョンをリリースしていきます。
 
-:::message
-- Visual Studio Code または、Visual Studio Code Insiders がセットアップされていること
-- GitHub Copilot がセットアップされており、エージェントモードが使用可能であること
-- Devin がセットアップされていること
-:::
+https://github.com/kumaryoya/devil_fruit
+
+https://rubygems.org/gems/devil_fruit
+
+
