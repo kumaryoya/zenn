@@ -129,11 +129,8 @@ devil_fruit (0.2.0)
 
 ```ruby
 gem install devil_fruit
-
 Fetching devil_fruit-0.3.0.gem
-
 Successfully installed devil_fruit-0.3.0
-
 1 gem installed
 ```
 
