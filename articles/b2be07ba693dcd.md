@@ -17,7 +17,7 @@ publication_name: "linkedge"
 
 本記事では、備忘録も兼ねて、自作 Gem の最新バージョンをリリースするまでの流れをご紹介します。
 
-![](https://storage.googleapis.com/zenn-user-upload/5b63896f0533-20251025.jpg =1000x)
+![](https://storage.googleapis.com/zenn-user-upload/5b63896f0533-20251025.jpg =400x)
 
 ## 注意点
 
