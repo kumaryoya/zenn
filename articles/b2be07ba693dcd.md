@@ -103,7 +103,7 @@ bundle exec rake build
 bundle exec rake release
 ```
 
-メールアドレスとパスワードの入力を求められるので、Rubygems.org に登録しているアカウント情報を入力します。
+メールアドレスとパスワードの入力を求められるので、RubyGems.org に登録しているアカウント情報を入力します。
 
 認証が成功すると、Gem がリリースされます。
 
