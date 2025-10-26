@@ -3,7 +3,7 @@ title: "【Ruby】自作 Gem の最新バージョンをリリースする"
 emoji: "💎"
 type: "tech"
 topics: [ruby, gem, 個人開発, バージョン管理, バージョンアップ]
-published: false
+published: true
 publication_name: "linkedge"
 ---
 
