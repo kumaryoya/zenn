@@ -1,6 +1,6 @@
 ---
 title: "【Tips】ユーザーマニュアルもコードレビューの対象に！Google Sites から Rails + Markdown へ移行した話"
-emoji: "📒"
+emoji: "📖"
 type: "tech"
 topics: [ai, markdown, rails, gem, tips]
 published: false
