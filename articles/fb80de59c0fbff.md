@@ -68,7 +68,7 @@ https://github.com/vmg/redcarpet
 
 設定項目については、`redcarpet` の README を参考に適宜調整してください。
 
-```diff ruby:api/app/helpers/application_helper.rb
+```diff ruby:app/helpers/application_helper.rb
 module ApplicationHelper
 + def render_markdown(file_path)
 +   markdown_content = File.read(file_path)
@@ -154,3 +154,30 @@ end
 
 <font color="red">文字色</font>
 ```
+
+### 動作確認
+
+`http://localhost:3000/user_manuals/test` にアクセスし、Markdown が正しくレンダリングされていることを確認します。
+
+以下のように表示されれば成功です。
+
+![](https://storage.googleapis.com/zenn-user-upload/f693217c6ba4-20251219.png =1000x)
+
+## まとめ
+
+今回は、Rails アプリケーション内で Markdown を HTML に変換し、ユーザーマニュアルを表示する方法を紹介しました。
+
+この方法には、以下のようなメリットがあります。
+
+- **バージョン管理とコードレビューの実現**
+  - マニュアルがコードベースに含まれるため、Git によるバージョン管理や PR を通じたレビューが可能になります。
+- **一貫したユーザー体験の提供**
+  - マニュアルがサービス内で表示されるため、デザインの統一感が保たれ、ユーザー体験が向上します。
+- **運用の効率化**
+  - 機能リリースとマニュアル更新を同時にデプロイできるため、運用が効率化されます。
+
+また、副産物として、AI にコードを書いてもらう際にマニュアルを参照させたり、マニュアル自体を AI に生成してもらうことも可能になりました。
+
+マニュアルの量が多いと移行は大変かもしれませんが、得られるメリットは大きいので、ぜひ試してみてください。
+
+最後までお読みいただき、ありがとうございました。
