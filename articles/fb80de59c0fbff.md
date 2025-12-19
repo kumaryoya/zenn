@@ -1,5 +1,5 @@
 ---
-title: "自社サービスのユーザーマニュアルを Google Sites からサービス内に移行した話"
+title: "【Tips】マニュアルもコードレビューの対象に！ Google Sites から Rails + Markdown へ移行した話"
 emoji: "📒"
 type: "tech"
 topics: [マニュアル, ai, ドキュメント, github, tips]
