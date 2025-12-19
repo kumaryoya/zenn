@@ -61,3 +61,93 @@ docker compose exec app bundle install
 https://rubygems.org/gems/redcarpet
 
 https://github.com/vmg/redcarpet
+
+### ヘルパーの作成
+
+次に、Markdown を HTML に変換するヘルパーメソッドを作成します。
+
+設定項目については、`redcarpet` の README を参考に適宜調整してください。
+
+```diff ruby:api/app/helpers/application_helper.rb
+module ApplicationHelper
++ def render_markdown(file_path)
++   markdown_content = File.read(file_path)
++   renderer = Redcarpet::Render::HTML.new
++   markdown = Redcarpet::Markdown.new(renderer, fenced_code_blocks: true, autolink: true)
++   markdown.render(markdown_content).html_safe
++ end
+end
+```
+
+これで、Markdown を HTML に変換する準備が整いました。
+
+### マニュアルの作成
+
+では、実際にテスト用のマニュアルを作成してみましょう。
+
+```diff ruby:config/routes.rb
+Rails.application.routes.draw do
++ resources :user_manuals, only: %i[] do
++   collection do
++     get :test
++   end
++ end
+end
+```
+
+
+```diff ruby:app/controllers/user_manuals_controller.rb
++ class UserManualsController < ApplicationController
++   def test; end
++ end
+```
+
+```diff ruby:app/views/user_manuals/test.html.erb
++ <div class="p-5">
++   <%= render_markdown(Rails.root.join('docs', 'test.md')) %>
++ </div>
+```
+
+```markdown:docs/test.md
+# テスト
+
+<hr>
+
+# 見出し
+
+## 見出し
+
+### 見出し
+
+#### 見出し
+
+##### 見出し
+
+<hr>
+
+- リスト
+  - リスト
+- リスト
+  - リスト
+
+<hr>
+
+1. リスト
+2. リスト
+
+<hr>
+
+[リンク](https://example.com)
+
+<hr>
+
+**太字**
+
+<hr>
+
+*斜体*
+
+<hr>
+
+<font color="red">文字色</font>
+```
