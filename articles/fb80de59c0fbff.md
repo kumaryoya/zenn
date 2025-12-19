@@ -83,11 +83,13 @@ end
 
 ### マニュアルの作成
 
-では、実際にテスト用のマニュアルを作成してみましょう。
+実際にテスト用のマニュアルを作成してみましょう。
+
+まず、ルーティング、コントローラー、ビューを作成します。
 
 ```diff ruby:config/routes.rb
 Rails.application.routes.draw do
-+ resources :user_manuals, only: %i[] do
++ resources :user_manuals, only: [] do
 +   collection do
 +     get :test
 +   end
@@ -95,23 +97,24 @@ Rails.application.routes.draw do
 end
 ```
 
-
 ```diff ruby:app/controllers/user_manuals_controller.rb
 + class UserManualsController < ApplicationController
 +   def test; end
 + end
 ```
 
-```diff ruby:app/views/user_manuals/test.html.erb
+```diff erb:app/views/user_manuals/test.html.erb
 + <div class="p-5">
 +   <%= render_markdown(Rails.root.join('docs', 'test.md')) %>
 + </div>
 ```
 
+次に、`docs` ディレクトリにマニュアル用の Markdown ファイルを作成します。
+
 ```markdown:docs/test.md
 # テスト
 
-<hr>
+---
 
 # 見出し
 
@@ -123,31 +126,31 @@ end
 
 ##### 見出し
 
-<hr>
+---
 
 - リスト
   - リスト
 - リスト
   - リスト
 
-<hr>
+---
 
 1. リスト
 2. リスト
 
-<hr>
+---
 
 [リンク](https://example.com)
 
-<hr>
+---
 
 **太字**
 
-<hr>
+---
 
 *斜体*
 
-<hr>
+---
 
 <font color="red">文字色</font>
 ```
