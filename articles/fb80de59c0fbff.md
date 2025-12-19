@@ -24,6 +24,8 @@ publication_name: "linkedge"
 
 本記事では、移行の方法と得られたメリットについて紹介します。
 
+![](https://storage.googleapis.com/zenn-user-upload/0b24eccf4d82-20251219.jpg =300x)
+
 ## 注意点
 
 :::message alert
@@ -39,3 +41,23 @@ publication_name: "linkedge"
 - Ruby：3.3.5
 - Rails：7.0.8.6
 :::
+
+## 移行の方法
+
+### gem の導入
+
+今回は、Ruby on Rails で開発されている自社サービスに組み込む形でマニュアルを管理するため、Markdown を HTML に変換する `redcarpet` という gem を導入しました。
+
+Gemfile に追加し、`bundle install` を実行します。
+
+```diff ruby:Gemfile
++ gem 'redcarpet'
+```
+
+```bash
+docker compose exec app bundle install
+```
+
+https://rubygems.org/gems/redcarpet
+
+https://github.com/vmg/redcarpet
