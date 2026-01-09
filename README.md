@@ -6,6 +6,8 @@
 
 * nvm use --lts
 
+* nvm alias default 'lts/*'
+
 * npm install -g npm@latest
 
 * npm install zenn-cli@latest
