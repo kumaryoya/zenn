@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Edit",
+      "Write",
+      "Bash(docker compose exec app bundle exec rubocop*)",
+      "Bash(docker compose exec -T app bundle exec rubocop*)",
+      "Bash(docker compose exec app bundle exec rspec*)",
+      "Bash(docker compose exec -T app bundle exec rspec*)",
+      "Bash(docker compose ps)",
+      "Bash(mkdir *)",
+      "Bash(ls *)",
+      "Bash(gh pr list)",
+      "Bash(gh pr checks *)",
+      "Bash(gh pr view *)",
+      "Bash(gh pr diff *)",
+      "Bash(git status*)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git show*)",
+      "Bash(git ls-files*)",
+      "Bash(sed -n *)",
+      "Bash(awk *)",
+      "Bash(wc *)",
+      "Bash(find . *)",
+      "Bash(head *)",
+      "WebFetch",
+      "WebSearch",
+      "Bash(curl *)"
+    ]
+  }
+}
