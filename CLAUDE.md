@@ -27,9 +27,9 @@ npx zenn list:books
 title: "..."
 emoji: "🍟"            # 記事アイコンとして表示される絵文字 1 つ
 type: "tech"           # "tech" または "idea"
-topics: [rails, ruby]  # タグ（小文字・スペースなし）
+topics: [rails, ruby]  # タグ（スペースなし。実例では大文字始まりや日本語タグも使用）
 published: true        # false にすると下書き扱い
-publication_name: "linkedge"  # 任意: Zenn Publication 配下で公開する場合
+publication_name: "linkedge"  # このリポジトリの全記事で "linkedge" を指定（Zenn Publication 配下）
 ---
 ```
 
