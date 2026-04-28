@@ -2,7 +2,7 @@
 title: "Claude Code 育成ログ：3 つの整備で開発体験が一変した話"
 emoji: "🔧"
 type: "tech"
-topics: [claudecode, claude, anthropic, ai, markdown]
+topics: [ai, tips, claude, anthropic,  claudecode]
 published: false
 publication_name: "linkedge"
 ---
