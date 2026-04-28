@@ -1,6 +1,6 @@
 ---
 title: "拡張機能を入れただけの Claude Code を、3 つの整備で別物にした話"
-emoji: "🔧"
+emoji: "🌱"
 type: "tech"
 topics: [ai, tips, claude, anthropic,  claudecode]
 published: false
