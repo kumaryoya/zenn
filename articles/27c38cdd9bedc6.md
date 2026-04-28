@@ -1,5 +1,5 @@
 ---
-title: "Claude Code 育成ログ：3 つの整備で開発体験が一変した話"
+title: "拡張機能を入れただけの Claude Code を、3 つの整備で別物にした話"
 emoji: "🔧"
 type: "tech"
 topics: [ai, tips, claude, anthropic,  claudecode]
