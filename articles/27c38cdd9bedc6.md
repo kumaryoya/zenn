@@ -1,5 +1,5 @@
 ---
-title: "【Claude Code】ファイルやディレクトリを整備したら、開発体験が劇的に向上した話"
+title: "【Claude Code】3 つのファイルを整備して開発体験が劇的に変わった話"
 emoji: "🌱"
 type: "tech"
 topics: [ai, tips, claude, anthropic, claudecode]
