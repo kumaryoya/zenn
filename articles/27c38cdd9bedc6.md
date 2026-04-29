@@ -139,13 +139,17 @@ Claude Code が `/コマンド名` で呼び出せるカスタムコマンドを
 
 - どちらも自動的に読み込まれる点では同じ
 - 基本的には `CLAUDE.md` に書くことが推奨されている
-- ルールが多くなったり整理したい場合に `rules/` に切り出す、という使い分け
+- ルールが多くなって整理したくなったときに `rules/` に切り出す、という使い分け
+
+https://code.claude.com/docs/ja/memory
 
 ### commands/ と skills/
 
-- 現在は `skills/` が推奨されている
+- Anthropic からは `skills/` の利用が推奨されている
 - 基本的に `commands/` は不要
-- どうしても短いコマンド名で呼び出したい場合のみ `commands/` を使う、という温度感
+- どうしても短いコマンド名で呼び出したい場合のみ `commands/` を使う、という使い分け
+
+https://code.claude.com/docs/ja/skills
 
 ## 実際に育成した内容
 
