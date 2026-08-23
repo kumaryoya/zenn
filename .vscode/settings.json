@@ -3,6 +3,7 @@
     "actioncable",
     "actionpack",
     "activerecord",
+    "activerecorddoctor",
     "AYSQ",
     "Bgvt",
     "bundleraudit",
@@ -50,8 +51,11 @@
     "Sszd",
     "Udemy",
     "uiuxdesign",
+    "unindexed",
+    "varchar",
     "VDBF",
     "Windler",
+    "Zeitwerk",
     "zenn",
     "zennfes"
   ]
